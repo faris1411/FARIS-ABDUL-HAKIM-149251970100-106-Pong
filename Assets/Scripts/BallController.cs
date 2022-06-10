@@ -4,9 +4,19 @@ using UnityEngine;
 
 public class BallController : MonoBehaviour
 {
+    // Ball speed
     public Vector2 speed;
+
+    // Rigidbody2D
     private Rigidbody2D rig;
-    
+
+    // Reset ball position
+    public Vector2 resetPosition;
+    public void ResetBall()
+    {
+        transform.position = new Vector3 (resetPosition.x, resetPosition.y, 2);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
