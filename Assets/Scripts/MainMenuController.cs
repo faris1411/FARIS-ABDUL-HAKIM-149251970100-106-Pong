@@ -11,10 +11,15 @@ public class MainMenuController : MonoBehaviour
         Debug.Log("Created by FARIS ABDUL HAKIM - 149251970100-106");
         SceneManager.LoadScene("Game");
     }
-
+    // Author button
     public void OpenAuthor()
     {
         Debug.Log("Created by Faris");
+    }
+    // Load credit scene
+    public void Credit()
+    {
+        SceneManager.LoadScene("Credit");
     }
 
     // Start is called before the first frame update
